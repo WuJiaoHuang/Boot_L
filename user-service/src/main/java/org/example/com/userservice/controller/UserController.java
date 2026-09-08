@@ -29,19 +29,17 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public Result<User> login(@RequestBody LoginRequest request) {
+    public Result<String> login(@RequestBody LoginRequest request) {
 
-        User user = userService.login(
+        String token = userService.login(
                 request.getUsername(),
                 request.getPassword()
         );
 
-        if (user == null) {
+        if (token == null) {
             return Result.error(40002, "用户名或密码错误");
         }
 
-        user.setPassword(null);
-
-        return Result.success(user);
+        return Result.success(token);
     }
 }

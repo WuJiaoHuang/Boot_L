@@ -10,12 +10,21 @@
     </parent>
 
     <artifactId>user-service</artifactId>
+    <packaging>pom</packaging>
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.example.com</groupId>
+            <artifactId>security-platform</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
         </dependency>
 
         <dependency>

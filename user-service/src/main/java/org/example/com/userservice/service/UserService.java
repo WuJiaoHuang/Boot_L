@@ -7,5 +7,5 @@ public interface UserService extends IService<User> {
 
     boolean register(User user);
 
-    User login(String username, String password);
+    String login(String username, String password);
 }
