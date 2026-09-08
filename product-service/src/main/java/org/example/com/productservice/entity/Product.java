@@ -3,10 +3,14 @@ package org.example.com.productservice.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import jdk.jfr.DataAmount;
+import lombok.Data;
 
 import java.math.BigDecimal;
 
 //表示这个java类对应数据库里的product表
+
+@Data
 @TableName("product")
 public class Product {
 
