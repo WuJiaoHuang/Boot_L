@@ -11,9 +11,16 @@ spring:
     password: Wjh20050705
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: Wjh20050705
+
 #product-service启动后，要去localhost:8761这个Eureka Server那里注册自己
 #它注册用的服务名，就是product-service
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+

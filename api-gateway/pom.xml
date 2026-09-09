@@ -12,7 +12,11 @@
     <artifactId>api-gateway</artifactId>
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.example.com</groupId>
+            <artifactId>security-platform</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
